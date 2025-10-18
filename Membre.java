@@ -10,11 +10,11 @@ public class Membre {
         this.id = id;
         this.mediasEmpruntes = new ArrayList<>();
     }
-    //getter pour les noms
+    //getter rendant possible l'acces à la variable privée noms
     public String getNom() {
         return nom;
     }
-    //getter pour les ID
+    //getter rendant possible l'acces à la variable privée ID
     public int getId() {
         return id;
     }
@@ -24,14 +24,15 @@ public class Membre {
             mediasEmpruntes.add(media);
         }
     }
-//getter pour la collection List<Media>
+//getter rendant possible l'acces à la collection privée List<Media>
     public List<Media> getMediasEmpruntes() {
         return mediasEmpruntes;
     }
-//methode retournant une chaine de caractère
+//ecrasement de la valeur precedemment retournée après instanciation de la methode toString par un nouvel ensemble de charactères retournés
     @Override
     public String toString() {
         return "Membre{" + "nom='" + nom + "', id=" + id + "}";
     }
 
 }
+
