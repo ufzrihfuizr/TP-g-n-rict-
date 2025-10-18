@@ -9,19 +9,20 @@ public class CD extends Media {
         this.artiste = artiste;
         this.duree = duree;
     }
-    //getter pour les artistes
+    //getter pour acceder au nom de l'artiste
     public String getArtiste() {
         return artiste;
     }
-    //getter pour la durée
+    //getter pour acceder à la durée
     public int getDuree() {
         return duree;
     }
 
-    //modification(écrasement) de la methode getDescription initialement declaré dans la classe Media et hérité depuis la class CD
+    //modification(écrasement) de la valeur retournée de la methode getDescription initialement declaré dans la classe Media et hérité depuis la class CD
     @Override
     public String getDescription() {
         return "CD de " + artiste + ", durée : " + duree + " min.";
     }
 
 }
+
