@@ -12,11 +12,11 @@ public abstract class Media {
         this.titre = titre;
         this.anneePublication = anneePublication;
     }
-//getter pour les titres
+//getter rendant possible l'acces à la variable privée titre
     public String getTitre() {
         return titre;
     }
-//getteur pour les années de parutions
+//getter rendant possible l'acces à la variable privée titre année de parution
     public int getAnneePublication() {
         return anneePublication;
     }
@@ -29,3 +29,4 @@ public abstract class Media {
     }
 
 }
+
