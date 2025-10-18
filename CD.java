@@ -1,5 +1,5 @@
 public class CD extends Media {
-    //initialisationdes variables utilisées
+    //initialisation des variables utilisées
     private String artiste;
     private int duree;  // en minutes
 
@@ -9,11 +9,11 @@ public class CD extends Media {
         this.artiste = artiste;
         this.duree = duree;
     }
-    //getter pour acceder au nom de l'artiste
+//getter rendant possible l'acces à la variable privée artiste
     public String getArtiste() {
         return artiste;
     }
-    //getter pour acceder à la durée
+   //getter rendant possible l'acces à la variable privée durée
     public int getDuree() {
         return duree;
     }
@@ -25,4 +25,5 @@ public class CD extends Media {
     }
 
 }
+
 
