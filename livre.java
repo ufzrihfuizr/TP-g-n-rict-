@@ -9,11 +9,11 @@ public class Livre extends Media {
         this.auteur = auteur;
         this.nbPages = nbPages;
     }
-//getter pour acceder au nom de l'auteur
+//getter rendant possible l'acces à la variable privée auteur
     public String getAuteur() {
         return auteur;
     }
-//getter pour acceder au nombre de pages
+//getter rendant possible l'acces à la variable privée pages
     public int getNbPages() {
         return nbPages;
     }
@@ -24,3 +24,4 @@ public class Livre extends Media {
     }
 
 }
+
