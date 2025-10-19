@@ -14,7 +14,7 @@ public class Utilitaires {
         }
     }
 
-    //filtrage
+    //creation de la methode static générique <T> filtrer
     public static <T> List<T> filtrer(List<T> liste, Predicate<T> critere) {
         if (liste == null) return null;
         //convertit la collection en un flux de données compatibles aux methodes filter , collect
@@ -23,7 +23,7 @@ public class Utilitaires {
                     .collect(Collectors.toList()); //conversion inverse traduisant le flux convertit dans une nouvelle collection à l'aide de la methode toList()
     }
 
-    // Copie
+    // Cration de la methode static générique <T> copier collection
     public static <T> void copierCollection(Collection<T> source, Collection<T> destination) {
         if (source == null || destination == null) return;
         for (T elt : source) {
@@ -32,3 +32,4 @@ public class Utilitaires {
     }
 
 }
+
