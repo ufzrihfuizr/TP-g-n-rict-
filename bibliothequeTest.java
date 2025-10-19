@@ -122,7 +122,7 @@ public class BibliothequeTest {
         Utilitaires.afficherListe(seulementLivres);
         System.out.println();
 
-        // 1) Copier collection (exemple)
+        // Copie de collection 
         //declaration de la collection List<Media> copieMedias
         List<Media> copieMedias = new ArrayList<>();
         Utilitaires.copierCollection(tousMedias, copieMedias);//copie des elements à l'aide de la methode copierCollection d'utilitaires present dans la collection tousMedia dans la collection copieMedias
@@ -131,3 +131,4 @@ public class BibliothequeTest {
     }
 
 }
+
