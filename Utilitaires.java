@@ -22,7 +22,10 @@ public class Utilitaires {
                     .filter(critere) //filtrage par predicat
                     .collect(Collectors.toList()); //conversion inverse traduisant le flux convertit dans une nouvelle collection à l'aide de la methode toList()
     }
-
+    public static <T> List<T> afficherDetails(List<T> liste){
+        
+        
+    }
     // Cration de la methode static générique <T> copier collection
     public static <T> void copierCollection(Collection<T> source, Collection<T> destination) {
         if (source == null || destination == null) return;
@@ -32,5 +35,6 @@ public class Utilitaires {
     }
 
 }
+
 
 
